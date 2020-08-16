@@ -13,8 +13,8 @@ import telethon.utils
 import heroku3
 
 
-async def add_bot(bot_token):
-    await bot.start(bot_token)
+async def add_bot():
+    ((await bot.start()) if os.environ.get("PHONE") is None else (await bot.start(phone=os.environ.get("PHONE"))))
     bot.me = await bot.get_me() 
     bot.uid = telethon.utils.get_peer_id(bot.me)
 
@@ -25,7 +25,7 @@ if len(argv) not in (1, 3, 4):
 else:
     bot.tgbot = None
     if Var.TG_BOT_USER_NAME_BF_HER is not None:
-        print("Avvio Bot Inline")
+        print("Bot Inline in avvio")
         # ForTheGreatrerGood of beautification
         bot.tgbot = TelegramClient(
             "TG_BOT_TOKEN",
@@ -34,7 +34,7 @@ else:
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Avvio Bot Inline completato senza errori")
         print("Avvio Userbot")
-        bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
+        bot.loop.run_until_complete(add_bot())
         if Var.HEROKU_APP_NAME and Var.HEROKU_API_KEY is not None:
             Heroku = heroku3.from_key(Var.HEROKU_API_KEY)
             app = Heroku.app(Var.HEROKU_APP_NAME)
@@ -46,7 +46,7 @@ else:
                 print("Avvio Userbot completato senza errori")
         print("Avvio terminato")
     else:
-        bot.start()
+        ((bot.start()) if os.environ.get("PHONE") is None else (bot.start(phone=os.environ.get("PHONE"))))
     
 
 import glob
