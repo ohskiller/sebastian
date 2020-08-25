@@ -25,7 +25,7 @@ async def cmd_list(event):
             for i in CMD_LIST:
                 string += "ℹ️ " + i + "\n"
                 for iter_list in CMD_LIST[i]:
-                    string += "    `" + str(iter_list) + "`"
+                    string += "    " + str(iter_list) + ""
                     string += "\n"
                 string += "\n"
             if len(string) > 4095:
@@ -43,8 +43,7 @@ async def cmd_list(event):
             else:
                 await event.edit(input_str + " plugin non valido!")
         else:
-            help_string = f"""Userbot Helper.. di {DEFAULTUSER}\nGruppo assistenza @IOIIIOIIIOI\n
-`Helper per i comandi`\nPremi .help plugin_name se non è qui."""
+            help_string = f"""Userbot Helper.. di {DEFAULTUSER}\nscrivere .send + nome file per prendere striga file."""
             results = await bot.inline_query(  # pylint:disable=E0602
                 tgbotusername,
                 help_string
