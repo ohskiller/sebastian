@@ -102,6 +102,6 @@ def paginate_help(page_number, loaded_plugins, prefix):
         pairs = pairs[modulo_page * number_of_rows:number_of_rows * (modulo_page + 1)] + \
             [
             (custom.Button.inline("👈", data="{}_prev({})".format(prefix, modulo_page)),
-             custom.Button.inline("👉",, data="{}_next({})".format(prefix, modulo_page)))
+             custom.Button.inline("👉", data="{}_next({})".format(prefix, modulo_page)))
         ]
     return pairs
