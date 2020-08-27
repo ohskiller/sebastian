@@ -23,10 +23,9 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "100101110"
 @bot.on(dev_cmd(pattern=f"alive", outgoing=True))
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running. """
-    await alive.edit("**▬▬▬▬▬ ❴✪❵ SYSTEM ❴✪❵ ▬▬▬▬▬**\n\n"
-                     f"**> 𝕥𝕖𝕝𝕖𝕥𝕙𝕠𝕟:** {version.__version__}\n"
-                     f"**> 𝕡𝕪𝕥𝕙𝕠𝕟:** {versions.__python_version__}\n"
-                     f"**> 𝕗𝕚𝕣𝕞𝕨𝕒𝕣𝕖:** {versions.__version__}\n"
-                     f"**> 𝕝𝕚𝕔𝕖𝕟𝕫𝕒:** {versions.__license__}\n"
-                     f"**> 👤𝕦𝕤𝕖𝕣 **: {DEFAULTUSER}\n\n"
+    await alive.edit("**🔰𝐝𝐚𝐭𝐚𝐛𝐚𝐬𝐞 𝐛𝐲 OHS_kill3r05🔰**\n\n"
+                     f"**> 𝐓𝐞𝐥𝐞𝐭𝐡𝐨𝐧:** {version.__version__}\n"
+                     f"**> 𝐏𝐲𝐭𝐡𝐨𝐧:** {versions.__python_version__}\n"
+                     f"**> 𝐅𝐢𝐫𝐦𝐰𝐚𝐫𝐞:** {versions.__version__}\n"
+                     f"**> 👤𝐔𝐬𝐞𝐫**: {DEFAULTUSER}\n\n"
                      "▬▬▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬▬▬")
