@@ -1,4 +1,4 @@
-#By @CometaLunare on TG, all rights deserved
+#By @OHS_kill3r05 on TG, all rights deserved
 
 import asyncio
 from telethon import events
@@ -19,7 +19,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "autoblu2":
+    if input_str == "autoblu":
 
         await event.edit(input_str)
 
