@@ -39,7 +39,7 @@ async def setNiceText(e):
       await e.edit("`𝐚𝐧𝐢𝐦𝐚𝐳𝐢𝐨𝐧𝐞 𝐭𝐞𝐬𝐭𝐨 𝐝𝐢𝐬𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐚✅`")
     else:
       autoNiceText = True
-      await e.edit("` 𝐚𝐧𝐢𝐦𝐚𝐳𝐢𝐨𝐧𝐞 𝐭𝐞𝐬𝐭𝐨 𝐝𝐢𝐬𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐚✅`")
+      await e.edit("` 𝐚𝐧𝐢𝐦𝐚𝐳𝐢𝐨𝐧𝐞 𝐭𝐞𝐬𝐭𝐨 𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐚✅`")
       
 @register(outgoing=True)
 async def niceText(e):
