@@ -11,9 +11,6 @@ from telethon import functions, types
 from telethon.tl.functions.messages import GetAllChatsRequest
 from telethon.tl.functions.messages import GetAllChatsRequest
 
-
-message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!**"
-mexScuola = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
 exempt = []
 mutedList = []
 autoNiceText = False
