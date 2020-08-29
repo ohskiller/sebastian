@@ -94,7 +94,7 @@ from telethon.tl.functions.messages import GetAllChatsRequest
 @register(outgoing=True, pattern="^.on$")
 async def changeName(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        name = "𖣘︎̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞༒卍 [ᵒⁿˡⁱⁿᵉ]"
+        name = "𖣘︎̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍 [ᵒⁿˡⁱⁿᵉ]"
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
@@ -103,7 +103,7 @@ async def changeName(e):
 @register(outgoing=True, pattern="^.off$")
 async def changeName(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        name = "𖣘︎̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞༒卍 [ᵒᶠᶠˡⁱⁿᵉ]"
+        name = "𖣘︎̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍 [ᵒᶠᶠˡⁱⁿᵉ]"
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
@@ -112,7 +112,7 @@ async def changeName(e):
 @register(outgoing=True, pattern="^.porntime$")
 async def changeName(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        name = "𖣘︎̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞༒卍 [sto su pornhub 🌚 ]"
+        name = "𖣘︎̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍 [sto su pornhub 🌚 ]"
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
@@ -121,7 +121,7 @@ async def changeName(e):
 @register(outgoing=True, pattern="^.salvailmondotime$")
 async def changeName(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        name = "𖣘︎̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞༒卍⚡️¹³¹⚡ [sto su Salva il mondo ]"
+        name = "𖣘︎̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍⚡️¹³¹⚡ [sto su Salva il mondo ]"
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
