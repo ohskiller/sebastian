@@ -19,7 +19,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "100101110"
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit(f"`{DEFAULTUSER}:`**Riavvio in corso...**\n**Sarò online tra 2min prova con `.test`**")
+    await event.edit(f"`{DEFAULTUSER}:`**𝐮𝐬𝐞𝐫𝐛𝐨𝐭 𝐫𝐢𝐚𝐯𝐯𝐢𝐚𝐭𝐨...**\n**𝐮𝐬𝐞𝐫𝐛𝐨𝐭 𝐨𝐧𝐥𝐢𝐧𝐞 𝐭𝐫𝐚 2 𝐦𝐢𝐧𝐮𝐭𝐢[.𝐭𝐞𝐬𝐭 𝐩𝐞𝐫 𝐚𝐯𝐯𝐢𝐚𝐭𝐞]**")
     await bot.disconnect()
     # https://archive.is/im3rt
     os.execl(sys.executable, sys.executable, *sys.argv)
@@ -31,5 +31,5 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit(f"`{DEFAULTUSER}:`**Userbot spento**\n**Avviami manualmente da heroku**")
+    await event.edit(f"`{DEFAULTUSER}:`**𝐮𝐬𝐞𝐫𝐛𝐨𝐭 𝐨𝐟𝐟**\n**𝐚𝐯𝐯𝐢𝐚 𝐦𝐚𝐧𝐮𝐚𝐥𝐦𝐞𝐧𝐭𝐞 𝐝𝐚 𝐡𝐞𝐫𝐨𝐤𝐮**")
     await bot.disconnect()
