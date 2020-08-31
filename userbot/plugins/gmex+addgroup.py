@@ -41,7 +41,7 @@ async def notBlackList(e):
   except:
     await e.edit("❌ Gruppo Non Trovato ❌")
  
-@register(outgoing=True, pattern="[.]listgroup")
+@register(outgoing=True, pattern="^[.]listgroup")
 async def groupList(e):
   global list, tmp_storage_global
   wait = False
@@ -59,5 +59,5 @@ async def groupList(e):
         mex += "\n__" + i.title + " -__ [`" + str(i.id) + "`]"
   await e.edit(mex)
   if wait:
-    await asyncio.sleep(120)
+    await asyncio.sleep(1)
     tmp_storage_global = None
