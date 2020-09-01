@@ -21,7 +21,7 @@ from userbot import CMD_HELP, bot, ALIVE_NAME
 from userbot.system import dev_cmd, register, errors_handler
 
 # ================= CONSTANT =================
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else 
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else  "100101110"
 # ============================================
 
 @bot.on(dev_cmd(pattern="dc"))  # pylint:disable=E0602
