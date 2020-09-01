@@ -21,7 +21,7 @@ async def setMessage(e):
   if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
     global message
     message = str(e.text[5:])
-    await e.edit("`𝐚𝐧𝐢𝐦𝐚𝐳𝐢𝐨𝐧𝐞 𝐭𝐞𝐬𝐭𝐨 𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐚 ✅`")
+    await e.edit("`ᴀɴɪᴍᴀᴢɪᴏɴᴇ ᴛᴇsᴛᴏ ᴀᴛᴛɪᴠᴀᴛᴀ ✅`")
 
 
 
@@ -33,10 +33,10 @@ async def setNiceText(e):
     global autoNiceText
     if autoNiceText:
       autoNiceText = False
-      await e.edit("`𝐚𝐧𝐢𝐦𝐚𝐳𝐢𝐨𝐧𝐞 𝐭𝐞𝐬𝐭𝐨 𝐝𝐢𝐬𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐚✅`")
+      await e.edit("`ᴀɴɪᴍᴀᴢɪᴏɴᴇ ᴛᴇsᴛᴏ ᴅɪsᴀᴛᴛɪᴠᴀᴛᴀ✅`")
     else:
       autoNiceText = True
-      await e.edit("` 𝐚𝐧𝐢𝐦𝐚𝐳𝐢𝐨𝐧𝐞 𝐭𝐞𝐬𝐭𝐨 𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐚✅`")
+      await e.edit("` ᴀɴɪᴍᴀᴢɪᴏɴᴇ ᴛᴇsᴛᴏ ᴀᴛᴛɪᴠᴀᴛᴀ ✅`")
       
 @register(outgoing=True)
 async def niceText(e):
