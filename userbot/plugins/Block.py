@@ -15,7 +15,7 @@ exempt = []
 mutedList = []
 autoNiceText = False
 
-blockMessage = "**Ops, sei stato bloccato🔒**"
+blockMessage = ✅𝒔𝒆𝒊 𝒔𝒕𝒂𝒕𝒐 𝒃𝒍𝒐𝒄𝒄𝒂𝒕𝒐✅"
 
 @register(outgoing=True, pattern="^[.]block$")
 async def blockUser(e):
@@ -31,7 +31,7 @@ async def blockUser(e):
         await e.edit(blockMessage)
         await e.client(BlockRequest(e.chat_id))
 
-unblockMessage = "**✅SEI STATO SBLOCCATO✅**"
+unblockMessage = "**✅𝒔𝒆𝒊 𝒔𝒕𝒂𝒕𝒐 𝒔𝒃𝒍𝒐𝒄𝒄𝒂𝒕𝒐✅**"
  
 @register(outgoing=True, pattern="^.unblock$")
 async def unblockUser(e):
