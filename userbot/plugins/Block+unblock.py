@@ -15,7 +15,7 @@ exempt = []
 mutedList = []
 autoNiceText = False
 
-blockMessage = ✅𝒔𝒆𝒊 𝒔𝒕𝒂𝒕𝒐 𝒃𝒍𝒐𝒄𝒄𝒂𝒕𝒐✅"
+blockMessage = "✅𝒔𝒆𝒊 𝒔𝒕𝒂𝒕𝒐 𝒃𝒍𝒐𝒄𝒄𝒂𝒕𝒐✅"
 
 @register(outgoing=True, pattern="^[.]block$")
 async def blockUser(e):
