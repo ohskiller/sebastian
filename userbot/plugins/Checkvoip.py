@@ -20,7 +20,7 @@ async def checkVoip(e):
       if dc_id == 4:
         await e.edit(f"**VoIP Checker**\n__🔍 L'Utente » {name} non risulta essere VoIP. ❌\n📡 DataCenter ➮ 🌍 4 - Europa__")
       else:
-        await e.edit(f"**VoIP Checker**\n__🔍 L'Utente » {name} risulta essere VoIP. ✅\n📡 DataCenter ➮ 🌍 1 - America__")
+        await e.edit(f"**VoIP Checker**\n__🔍 L'Utente » {name} risulta essere VoIP. ⚠️\n📡 DataCenter ➮ 🌍 1 - America__")
     except:
       await e.edit("__**❌ Per vedere se è un voip l'utente deve avere un immagine di profilo ❌**__")
   else:
@@ -36,6 +36,6 @@ async def checkVoip(e):
       if dc_id == 4:
         await e.edit(f"**VoIP Checker**\n__🔍 L'Utente » {name} non risulta essere VoIP. ❌\n📡 DataCenter ➮ 🌍 4 - Europa__")
       else:
-        await e.edit(f"**VoIP Checker**\n__🔍 L'Utente » {name} risulta essere VoIP. ✅\n📡 DataCenter ➮ 🌍 1 - America__")
+        await e.edit(f"**VoIP Checker**\n__🔍 L'Utente » {name} risulta essere VoIP. ⚠️\n📡 DataCenter ➮ 🌍 1 - America__")
     except:
       await e.edit("**❌ Utente Non Trovato ❌**")
