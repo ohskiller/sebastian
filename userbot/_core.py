@@ -32,10 +32,10 @@ async def install(event):
                 path1 = Path(downloaded_file_name)
                 shortname = path1.stem
                 load_module(shortname.replace(".py", ""))
-                await event.edit("Plugin Caricato `{}`".format(os.path.basename(downloaded_file_name)))
+                await event.edit("✅𝒑𝒍𝒖𝒈𝒊𝒏 𝒊𝒏𝒔𝒕𝒂𝒍𝒍𝒂𝒕𝒐! `{}`".format(os.path.basename(downloaded_file_name)))
             else:
                 os.remove(downloaded_file_name)
-                await event.edit(f"`{DEFAULTUSER}`:**Errore! Plugin installato/pre-installato.**")
+                await event.edit(f"`{DEFAULTUSER}`:**❌𝒆𝒓𝒓𝒐𝒓𝒆!𝒒𝒖𝒆𝒔𝒕𝒐 𝒑𝒍𝒖𝒈𝒊𝒏 𝒆 𝒈𝒊𝒂 𝒊𝒏𝒔𝒕𝒂𝒍𝒍𝒂𝒕𝒐.**")
         except Exception as e:  # pylint:disable=C0103,W0703
             await event.edit(str(e))
             os.remove(downloaded_file_name)
@@ -70,7 +70,7 @@ async def unload(event):
     shortname = event.pattern_match["shortname"]
     try:
         remove_plugin(shortname)
-        await event.edit(f"**Unload** {shortname} **eseguito**")
+        await event.edit(f"**✅𝒖𝒏𝒍𝒐𝒂𝒅** {shortname} **𝒆𝒔𝒆𝒈𝒖𝒊𝒕𝒐 𝒄𝒐𝒏 𝒔𝒖𝒄𝒆𝒔𝒔𝒐✅**")
     except Exception as e:
         await event.edit("**Unload** {shortname} **eseguito**\n{}".format(shortname, str(e)))
     await asyncio.sleep(DELETE_TIMEOUT)
@@ -87,6 +87,6 @@ async def load(event):
         except:
             pass
         load_module(shortname)
-        await event.edit(f"**Caricato** {shortname}")
+        await event.edit(f"**✅𝒄𝒂𝒓𝒊𝒄𝒂𝒕𝒐 𝒄𝒐𝒏 𝒔𝒖𝒄𝒆𝒔𝒔𝒐** {shortname}")
     except Exception as e:
-        await event.edit(f"**Impossibile caricare {shortname} causa error.\n{str(e)}**")
+        await event.edit(f"**❌𝒊𝒎𝒑𝒐𝒔𝒔𝒊𝒃𝒊𝒍𝒆 𝒄𝒂𝒓𝒊𝒄𝒂𝒓𝒆 {shortname} causa error.\n{str(e)}**")
