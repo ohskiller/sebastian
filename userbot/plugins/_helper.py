@@ -1,11 +1,3 @@
-# Copyright © 2020 di 100101110 Github, <https://github.com/100101110>.
-#
-# Questo file fa parte del progetto <https://github.com/100101110/userbot-100101110>,
-# e viene rilasciato in base alla "Licenza GNU Affero General Public v3.0".
-# Si prega di consultare <https://github.com/100101110/userbot-100101110/blob/master/LICENSE>
-#
-# Tutti i diritti riservati.
-  
 import asyncio
 from userbot import ALIVE_NAME, bot, CMD_LIST
 from userbot.system import command
@@ -43,7 +35,7 @@ async def cmd_list(event):
             else:
                 await event.edit(input_str + " plugin non valido!")
         else:
-            help_string = f"""Userbot Helper.. di {DEFAULTUSER}\nscrivere .send + nome file per prendere striga file."""
+            help_string = f"""Userbot Helper di [{DEFAULTUSER}]\nscrivere .send + nome file per prendere file pl."""
             results = await bot.inline_query(  # pylint:disable=E0602
                 tgbotusername,
                 help_string
