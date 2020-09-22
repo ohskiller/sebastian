@@ -14,16 +14,16 @@ from telethon.tl.functions.messages import GetAllChatsRequest
 @register(outgoing=True, pattern="^.on$")
 async def changeName(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        name = "Nicky [onlaiz]"
+        name = "OHS_KIll3r05 [online]"
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
-        await e.edit("`Ora sei Online`")
+        await e.edit("`Ora sono Online`")
 		
 @register(outgoing=True, pattern="^.off$")
 async def changeName(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        name = "Nicky [offlunz]"
+        name = "OHS_KIll3r05 [online]"
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
@@ -32,7 +32,7 @@ async def changeName(e):
 @register(outgoing=True, pattern="^.goretime$")
 async def changeName(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        name = "Nicky [sto su goretube ]"
+        name = "OHS_KIll3r05 [online]"
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
@@ -58,16 +58,16 @@ async def changeName(e):
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
-        await e.edit("`Ora sei Online`")
+        await e.edit("`Ora sono Online`")
 		
 @register(outgoing=True, pattern="^.off$")
 async def changeName(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        name = "Nicky [offlunz]"
+        name = "OHS_KIll3r05 [online]"
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
-        await e.edit("`Ora sei Offline`")
+        await e.edit("`Ora sono Offline`")
 		
 @register(outgoing=True, pattern="^.goretime$")
 async def changeName(e):
@@ -76,7 +76,7 @@ async def changeName(e):
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
-        await e.edit("`Ora sei su gore.tube`")
+        await e.edit("`Ora sono su gore.tube`")
 
 import asyncio
 from userbot import bot
@@ -94,25 +94,25 @@ from telethon.tl.functions.messages import GetAllChatsRequest
 @register(outgoing=True, pattern="^.on$")
 async def changeName(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        name = "𖣘︎̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍 [ᵒⁿˡⁱⁿᵉ]"
+        name = "༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍 [ᵒⁿˡⁱⁿᵉ]"
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
-        await e.edit("`Ora sei Online`")
+        await e.edit("`Ora sono Online`")
 		
 @register(outgoing=True, pattern="^.off$")
 async def changeName(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        name = "𖣘︎̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍 [ᵒᶠᶠˡⁱⁿᵉ]"
+        name ="༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍 [ᵒᶠᶠˡⁱⁿᵉ]"
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
-        await e.edit("`Ora sei Offline`")
+        await e.edit("`Ora sono Offline`")
 		
 @register(outgoing=True, pattern="^.porntime$")
 async def changeName(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        name = "𖣘︎̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍 [sto su pornhub 🌚 ]"
+        name = "༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍 [sto su pornhub 🌚 ]"
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
@@ -121,7 +121,7 @@ async def changeName(e):
 @register(outgoing=True, pattern="^.salvailmondotime$")
 async def changeName(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        name = "𖣘︎̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼̼༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍⚡️¹³¹⚡ [sto su Salva il mondo ]"
+        name = "༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍⚡️¹³¹⚡ [sto su Salva il mondo ]"
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
