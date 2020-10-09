@@ -2,18 +2,6 @@ from telethon import events
 from datetime import datetime
 from userbot.system import command
 
-
-@command(pattern="^.test")
-async def _(event):
-    if event.fwd_from:
-        return
-    start = datetime.now()
-    await event.edit("**¯\_(ツ)_/¯**")
-    end = datetime.now()
-    ms = (end - start).microseconds / 1000
-    await event.edit("**¯\_(ツ)_/¯**\n{}".format(ms))   
-
-
 @command(pattern="^.ping")
 async def _(event):
     if event.fwd_from:
@@ -22,4 +10,4 @@ async def _(event):
     await event.edit("Pong!")
     end = datetime.now()
     ms = (end - start).microseconds / 1000
-    await event.edit("Pong!\n{}".format(ms))
+    await event.edit("Ping!\n{}".format(ms))
