@@ -1,40 +1,35 @@
-import json
-import random
-import re
-import io
+#By @OHS_Kill3r05 on TG, all rights deserved
+
 import asyncio
-from math import ceil
-from userbot import ALIVE_NAME, bot, CMD_LIST
-from userbot.system import command
-from platform import uname
-from telethon import events, errors, custom
+from telethon import events
+from userbot import bot
+from userbot.system import dev_cmd
 
-# ================= CONSTANT =================
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "100101110"
-# ============================================
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 
-@command(pattern="^.cmd ?(.*)")
-async def cmd_list(event):
-    help_string = ""
-    pl_amount = 0
-    for i in CMD_LIST:
-        help_string += i
-        help_string += " "
-        pl_amount += 1
-    help_string = help_string[:-1]
-    await event.edit("""◈ **Userbot - Aiuto** ◈
-__Developed by @OHS_Kill3r05__
-    
-**Utilizza:**
-    `.help [plugin_name]`
+async def _(event):
 
-**Sistema:**
-    Telethon: `1.16.2`
-    Python: `3.8.5`
+    if event.fwd_from:
 
-**Plugins ({}):**
-    → `{}`
-""".format(
-        pl_amount,
-        help_string
-    ))
+        return
+
+    animation_interval = 0.4
+
+    animation_ttl = range(0, 117)
+
+    input_str = event.pattern_match.group(1)
+
+    if input_str == "cmd":
+
+        await event.edit(input_str)
+
+        animation_chars = [
+            "https://telegra.ph/Lista-comandi-userbot-di-OHS-kill3r05-10-09"
+
+        ]
+
+        for i in animation_ttl:
+
+            await asyncio.sleep(animation_interval)
+
+            await event.edit(animation_chars[i % 117])
