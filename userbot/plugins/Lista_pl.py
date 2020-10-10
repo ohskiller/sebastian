@@ -24,7 +24,7 @@ async def _(event):
         await event.edit(input_str)
 
         animation_chars = [
-            "[LISTA COMANDI USERBOT](https://telegra.ph/Lista-comandi-userbot-di-OHS-kill3r05-10-09/{packshortname)"
+            "[LISTA COMANDI USERBOT](https://telegra.ph/Lista-comandi-userbot-di-OHS-kill3r05-10-09/)"
 
         ]
 
