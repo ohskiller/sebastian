@@ -118,11 +118,11 @@ async def changeName(e):
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
         await e.edit("`Ora sei su pornhub o su qualche sito pedo 🌚`")
 		
-@register(outgoing=True, pattern="^.salvailmondotime$")
+@register(outgoing=True, pattern="^.cod$")
 async def changeName(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        name = "༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍⚡️¹³¹⚡ [sto su Salva il mondo ]"
+        name = "༒✞๏ђร_𝕜𝕚𝕝𝕝3𝕣05✞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋ༒卍 [sto su warzone ]"
         await bot(UpdateProfileRequest(first_name=name, last_name=""))
         global message
         message = "**⛔️ Al momento sono OFFLINE.\n⚠️ Scrivi tutto in un messaggio e leggerò il prima possibile!.**"
-        await e.edit("`Ora sono su fortnite per precisione salva il mondo`")
+        await e.edit("`Ora sono su warzone`")
