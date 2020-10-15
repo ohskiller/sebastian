@@ -19,7 +19,7 @@ async def lastname(event):
     if message.sender.bot:
         await event.edit("```attendere...```")
         return
-    await event.edit("```Sit tight while we crunching data from NSA```")
+    await event.edit("```attendere...```")
     try:
         async with bot.conversation(chat) as conv:
             try:
