@@ -95,7 +95,7 @@ async def on_snip_save(event):
         await event.edit(f"`{DEFAULTUSER}:`**𝖾𝗋𝗋𝗈𝗋𝖾 𝗋𝗂𝗉𝗋𝗈𝗏𝖺𝗋𝖾|`.salvafiltro` 𝖾 𝗂𝗅 𝗍𝖾𝗌𝗍𝗈 𝗉𝖾𝗋 𝗌𝖺𝗅𝗏𝖺𝗋𝖾 𝗂𝗅 𝖿𝗂𝗅𝗍𝗋𝗈**")
 
 
-@command(pattern="^.listfilters$")
+@command(pattern="^.listafiltri$")
 async def on_snip_list(event):
     all_snips = get_all_filters(event.chat_id)
     OUT_STR = "**Filtri in questa Chat:**\n"
@@ -103,7 +103,7 @@ async def on_snip_list(event):
         for a_snip in all_snips:
             OUT_STR += f"👉 {a_snip.keyword} \n"
     else:
-        OUT_STR = "**𝗇𝖾𝗌𝗌𝗎𝗇𝗈 𝖿𝗂𝗅𝗍𝗋𝗈 𝖼𝗋𝖾𝖺𝗍𝗈`**"
+        OUT_STR = "❌𝗇𝖾𝗌𝗌𝗎𝗇𝗈 𝖿𝗂𝗅𝗍𝗋𝗈 𝖼𝗋𝖾𝖺𝗍𝗈❌"
     if len(OUT_STR) > 4096:
         with io.BytesIO(str.encode(OUT_STR)) as out_file:
             out_file.name = "filters.text"
@@ -120,11 +120,11 @@ async def on_snip_list(event):
         await event.edit(OUT_STR)
 
 
-@command(pattern="^.clearfilter (.*)")
+@command(pattern="^.delfiltro (.*)")
 async def on_snip_delete(event):
     name = event.pattern_match.group(1)
     remove_filter(event.chat_id, name)
-    await event.edit(f"**Filtro {name} eliminato**")
+    await event.edit(f"✅𝖿𝗂𝗅𝗍𝗋𝗈 {name} eliminato✅")
 
 
 @command(pattern="^.clearallfilters$")
