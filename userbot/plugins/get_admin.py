@@ -5,7 +5,7 @@ from telethon.tl.types import ChannelParticipantsAdmins, ChannelParticipantAdmin
 from userbot.system import dev_cmd
 from userbot import bot
 
-@bot.on(dev_cmd("get_ad?(m)in ?(.*)"))
+@bot.on(dev_cmd("admin ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -23,7 +23,7 @@ async def _(event):
     if not input_str:
         chat = to_write_chat
     else:
-        mentions_heading = "**Admins in {} channel: **\n".format(input_str)
+        mentions_heading = "**Admins in {} questo gruppo: **\n".format(input_str)
         mentions = mentions_heading
         try:
             chat = await bot.get_entity(input_str)
