@@ -9,7 +9,7 @@ from userbot.system import dev_cmd
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "OHS_kill3r05"
 # ============================================
 
-@bot.on(dev_cmd(pattern=f"status", outgoing=True))
+@bot.on(dev_cmd(pattern=f"online", outgoing=True))
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running. """
     await alive.edit("**🔰 𝖼𝗋𝖾𝖺𝗍𝗈𝗋𝖾 [OHS_kill3r05](https://t.me/OHS_kill3r05)🔰**\n\n"
