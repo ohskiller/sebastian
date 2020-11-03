@@ -46,7 +46,7 @@ async def AFK(e):
       if not e.chat_id in Approved:
         await e.delete()
         if not e.chat_id in inWait:
-          await e.respond(f"**👋Ciao, in questo momento non sono disponibile\n\n✅Aspetta che ti venga approvata la chat\n\n🤐Solo un messaggio ogni 30 secondi verrà salvato quindi non spammare\n\n📩il tuo messaggio:\n{e.text}**")
+          await e.respond(f"**👋Ciao, in questo momento non sono disponibile\n\n✅Aspetta che ti venga approvata la chat\n\n🤐Solo un messaggio ogni 15 secondi verrà salvato quindi non spammare\n\n📩il tuo messaggio:\n{e.text}**")
           inWait.append(e.chat_id)
-          await asyncio.sleep(30)
+          await asyncio.sleep(15)
           inWait.remove(e.chat_id)
