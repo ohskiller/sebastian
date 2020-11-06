@@ -1,48 +1,54 @@
-#By @OHS_Kill3r05 on TG, all rights deserved
-
 import asyncio
-from telethon import events
-from userbot import bot
-from userbot.system import dev_cmd
 
-@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
+from userbot.system import register
+from telethon.tl.functions.users import GetFullUserRequest
+from telethon.utils import get_input_location
 
-async def _(event):
-
-    if event.fwd_from:
-
-        return
-
-    animation_interval = 0.4
-
-    animation_ttl = range(0, 117)
-
-    input_str = event.pattern_match.group(1)
-
-    if input_str == "gay":
-
-        await event.edit(input_str)
-
-        animation_chars = [
-            "By @OHS_Kill3r05",
-            "caricamento...",
-            "caricamento..",
-            "caricamento.",
-            "caricamento...",
-            "caricamento..",
-            "caricamento.",
-            "caricamento...",
-            "caricamento..",
-            "caricamento.",
-            "caricamento...",
-            "caricamento..",
-            "caricamento.",
-            "sei appena diventato GAY🏳‍🌈",
-
-        ]
-
-        for i in animation_ttl:
-
-            await asyncio.sleep(animation_interval)
-
-            await event.edit(animation_chars[i % 117])
+@register(outgoing=True, pattern="^[.]gay")
+async def checkVoip(e):
+  if e.is_reply:
+    msg = await e.get_reply_message()
+    try:
+      user = await e.client(GetFullUserRequest(msg.sender_id))
+      dc_id, location = get_input_location(user.profile_photo)
+      if user.user.username != None:
+        name = "@" + user.user.username
+      else:
+        name = user.user.first_name
+      if dc_id == 4:
+        await e.edit(f"🏳‍🌈𝐆𝐀𝐘__𝐂𝐇𝐄𝐂𝐊𝐄𝐑🔍\
+\n⛔️ ᴇᴄᴄᴏ ɪʟ ɢᴀʏ ᴘʀᴇsᴇɴᴛᴇ\
+\n⛔️ ɪɴ ǫᴜᴇsᴛᴏ ɢʀᴜᴘᴘᴏ --->  {name} \
+\n sɢᴀᴍᴀᴛᴏ (^。^)ノ")
+      else:
+        await e.edit(f"🏳‍🌈𝐆𝐀𝐘__𝐂𝐇𝐄𝐂𝐊𝐄𝐑🔍\
+\n⛔️ ᴇᴄᴄᴏ ɪʟ ɢᴀʏ ᴘʀᴇsᴇɴᴛᴇ\
+\n⛔️ ɪɴ ǫᴜᴇsᴛᴏ ɢʀᴜᴘᴘᴏ --->  {name} \
+\n sɢᴀᴍᴀᴛᴏ (^。^)ノ")
+    except:
+      await e.edit("🏳‍🌈𝐆𝐀𝐘__𝐂𝐇𝐄𝐂𝐊𝐄𝐑🔍\
+\n⛔️ ᴇᴄᴄᴏ ɪʟ ɢᴀʏ ᴘʀᴇsᴇɴᴛᴇ\
+\n⛔️ ɪɴ ǫᴜᴇsᴛᴏ ɢʀᴜᴘᴘᴏ --->  {name} \
+\n sɢᴀᴍᴀᴛᴏ (^。^)ノ")
+  else:
+    get = e.text.split(" ", 1)[1]
+    try:
+      usr = await e.client.get_entity(get)
+      user = await e.client(GetFullUserRequest(usr.id))
+      dc_id, location = get_input_location(user.profile_photo)
+      if user.user.username != None:
+        name = "@" + user.user.username
+      else:
+        name = user.user.first_name
+      if dc_id == 4:
+        await e.edit(f"🏳‍🌈𝐆𝐀𝐘__𝐂𝐇𝐄𝐂𝐊𝐄𝐑🔍\
+\n⛔️ ᴇᴄᴄᴏ ɪʟ ɢᴀʏ ᴘʀᴇsᴇɴᴛᴇ\
+\n⛔️ ɪɴ ǫᴜᴇsᴛᴏ ɢʀᴜᴘᴘᴏ --->  {name} \
+\n sɢᴀᴍᴀᴛᴏ (^。^)ノ")
+      else:
+        await e.edit(f"🏳‍🌈𝐆𝐀𝐘__𝐂𝐇𝐄𝐂𝐊𝐄𝐑🔍\
+\n⛔️ ᴇᴄᴄᴏ ɪʟ ɢᴀʏ ᴘʀᴇsᴇɴᴛᴇ\
+\n⛔️ ɪɴ ǫᴜᴇsᴛᴏ ɢʀᴜᴘᴘᴏ --->  {name} \
+\n sɢᴀᴍᴀᴛᴏ (^。^)ノ")
+    except:
+      await e.edit("**❌ 𝗲𝗿𝗿𝗼𝗿𝗲 ❌**")
