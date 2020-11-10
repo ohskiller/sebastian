@@ -24,12 +24,12 @@ async def _(event):
         await event.edit(input_str)
 
         animation_chars = [
- "Informazioni sui gruppi di @STWAntiscambot",
-          " Canale delle prove > @STWAntiscam_prove 📂",
-"Canale principale > @STWAntiscam_channel👑",
-"Assistenza > @STWAntiscam_assistenza_bot⚠️",
+  "Informazioni sui gruppi di @STWAntiscambot\n"
+          " Canale delle prove > @STWAntiscam_prove \n"
+"Canale principale > @STWAntiscam_channel👑\n"
+"Assistenza > @STWAntiscam_assistenza_bot⚠️\n"
 
-"Bot >  @STWAntiscambot 🤖",
+"Bot >  @STWAntiscambot 🤖\n"
 
         ]
 
