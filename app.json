@@ -1,6 +1,6 @@
 {
   "name": "OHS_Kill3r",
-  "repository": https://github.com/ohskiller/userbotkil",
+  "repository": "https://github.com/ohskiller/userbotkil",
   "env": {
     "ENV": {
       "description": "NON MODIFICARE serve per attivare Heroku.",
