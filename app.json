@@ -1,15 +1,6 @@
 {
-  "name": "Friday-Userbot",
-  "description": "A Userbot Based On Pyrogram.",
-  "logo": "https://telegra.ph/file/b4e1e36c6b1fcb32dd997.jpg",
-  "keywords": [
-    "telegram",
-    "fridaybot",
-    "plugin",
-    "fridaybot",
-    "productivity"
-  ],
-  "repository": "https://github.com/ohskiller/userbotkil",
+  "name": "OHS_Kill3r",
+  "repository": https://github.com/ohskiller/userbotkil,
   "env": {
     "ENV": {
       "description": "NON MODIFICARE serve per attivare Heroku.",
@@ -90,10 +81,6 @@
       "value": "",
       "required": false
     },
-    "TG_BOT_TOKEN_BF_HER": {
-      "description": "Crea un bot con http://t.me/BotFather e inserisci il token personale del tuo bot.",
-      "value": ""
-    },
     "CHROME_BIN": {
       "description": "Requisito carbon.py. Non toccare. ",
       "value": "/app/.apt/usr/bin/google-chrome",
@@ -103,10 +90,6 @@
       "description": "Requisito carbon.py. Non toccare. ",
       "value": "/app/.chromedriver/bin/chromedriver",
       "required": false
-    },
-    "TG_BOT_USER_NAME_BF_HER": {
-      "description": "Crea un bot con http://t.me/BotFather e inserisci l'username in http.",
-      "value": ""
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
       "description": "Requisito per autopic.py Url preview link della tua Pic Profilo.",
