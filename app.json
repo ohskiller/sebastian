@@ -10,60 +10,132 @@
     "productivity"
   ],
   "repository": "https://github.com/ohskiller/userbotkil",
-  "website": "t.me/fridayot",
-  "success_url": "t.me/FridayOT",
-  "stack": "container",
   "env": {
-    "API_ID": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
+    "ENV": {
+      "description": "NON MODIFICARE serve per attivare Heroku.",
+      "value": "ANYTHING"
+    },
+    "TEMP_DOWNLOAD_DIRECTORY": {
+      "description": "Directory dei file NON MODIFICARE!",
+      "value": "./userbot/DOWNLOADS/",
+      "required": false
+    },
+    "ALIVE_NAME": {
+      "description": "Inserisci la @ del tuo account Telegram",
+      "value": ""
+    },
+    "AUTONAME": {
+      "description": "Requisito per il modulo autoprofilo.py imposta un nome che apparirà come nome di telegram.",
+      "value": "",
+      "required": false
+    },
+    "APP_ID": {
+      "description": "Valori ottenuti da my.telegram.org!",
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
+      "description": "Valori ottenuti da my.telegram.org!",
       "value": ""
     },
-    "MONGO_DB": {
-      "description": "Create A Database In Mongodb And Get URL. Make Sure To Enter Correct URL!",
-      "value": ""
-    },
-    "COMMAND_HANDLER": {
-      "description": "Your Command Handler.",
-      "value": ".",
-      "required": false
-    },
-    "LOAD_UNOFFICIAL_PLUGINS": {
-      "description": "Do You Wish To Load X-Tra Plugins?",
-      "value": "True"
-    },
-    "LOG_GRP": {
-      "description": "A Group ID Where You Want To Log Important Logs.",
+    "STRING_SESSION": {
+      "description": "Valore ottenuto da termux o telesetup.py",
       "value": ""
     },
     "HEROKU_API_KEY": {
-      "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.",
-      "value": ""
-    },
-    "HEROKU_APP_NAME": {
-      "description": "Heroku App Name That You Filled Above.",
-      "value": ""
-    },
-    "UPSTREAM_REPO": {
-      "description": "Your Upstream URL HERE. If You're Beginner, Don't Change This.",
-      "value": "https://github.com/DevsExpo/FridayUserBot",
+      "description": "Vai su https://dashboard.heroku.com/account, vai su API KEY premi Reveal e copiala.",
+      "value": "",
       "required": false
     },
-    "BOT_TOKEN": {
-      "description": "Your Bot Token Obtained From @BotFather. This is Not Important",
+    "HEROKU_APP_NAME": {
+      "description": "Valore uguale ad App Name inserito all'inizio.",
+      "value": "",
+      "required": false
+    },
+    "PRIVATE_GROUP_ID": {
+      "description": "Crea un gruppo privato e inserisci il ChatId per il log (es:-10012345678).",
+      "value": ""
+    },
+    "MAX_FLOOD_IN_P_M_s": {
+      "description": "Massimo numero di messaggi che una persona può inviarti prima di essere bloccata. Valore di default è 3.",
+      "value": "3",
+      "required": false
+    },
+    "OCR_SPACE_API_KEY": {
+      "description": "Requisito per ocr.py Vai su https://ocr.space/ocrapi e copia API.",
+      "value": "",
+      "required": false
+    },
+    "DEFAULT_BIO": {
+      "description": "Requisito per autoprofilo.py impostala per far funzionare il plugin.",
+      "value": "",
+      "required": false    
+    },
+    "REM_BG_API_KEY": {
+      "description": "Requisito per il modulo autobio, imposta la tua bio personale.",
+      "value": "",
+      "required": false
+    },
+    "GITHUB_ACCESS_TOKEN": {
+      "description": "Requisito per gitcommit.py Vai sul tuo account e copia 'Github access token' e inserisci il token per usarlo.",
+      "value": "",
+      "required": false
+    },
+    "GIT_REPO_NAME": {
+      "description": "Inserisci il nome del tuo repo solo se hai inserito GITHUB_ACCESS_TOKEN.",
+      "value": "",
+      "required": false
+    },
+    "LYDIA_API_KEY": {
+      "description": "Vai su https://telegra.ph/Lydia-09-05 e scopri come funziona.",
+      "value": "",
+      "required": false
+    },
+    "TG_BOT_TOKEN_BF_HER": {
+      "description": "Crea un bot con http://t.me/BotFather e inserisci il token personale del tuo bot.",
+      "value": ""
+    },
+    "CHROME_BIN": {
+      "description": "Requisito carbon.py. Non toccare. ",
+      "value": "/app/.apt/usr/bin/google-chrome",
+      "required": false
+    },
+    "CHROME_DRIVER": {
+      "description": "Requisito carbon.py. Non toccare. ",
+      "value": "/app/.chromedriver/bin/chromedriver",
+      "required": false
+    },
+    "TG_BOT_USER_NAME_BF_HER": {
+      "description": "Crea un bot con http://t.me/BotFather e inserisci l'username in http.",
+      "value": ""
+    },
+    "DOWNLOAD_PFP_URL_CLOCK": {
+      "description": "Requisito per autopic.py Url preview link della tua Pic Profilo.",
       "value": "",
       "required": false
     },
     "TZ": {
-      "description": "Your Time Zone",
-      "value": "Asia/Kolkata"
-    },
-    "STRINGSESSION": {
-      "description": "String Session, Run string_gen.py to get String Session.",
-      "value": ""
+      "description": "Requisito per autopic.py Vai su http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
+      "value": "Europe/Rome",
+      "required": false
     }
-  }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/amivin/aria2-heroku.git"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "heroku/python"
+  }]
 }
