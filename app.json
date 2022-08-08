@@ -1,5 +1,5 @@
 {
-  "name": "userbot-100101110",
+  "name": "mio",
   "logo": "https://www.toptenz.net/wp-content/uploads/2019/01/red-dragon-3235672_640.jpg",
   "repository": "https://github.com/ohskiller/sebastian",
   "env": {
@@ -33,59 +33,9 @@
       "description": "Valore ottenuto da termux o telesetup.py",
       "value": ""
     },
-    "HEROKU_API_KEY": {
-      "description": "Vai su https://dashboard.heroku.com/account, vai su API KEY premi Reveal e copiala.",
-      "value": "",
-      "required": false
-    },
-    "HEROKU_APP_NAME": {
-      "description": "Valore uguale ad App Name inserito all'inizio.",
-      "value": "",
-      "required": false
-    },
-    "PRIVATE_GROUP_ID": {
-      "description": "Crea un gruppo privato e inserisci il ChatId per il log (es:-10012345678).",
-      "value": "",
-      "required": false
-    },
     "MAX_FLOOD_IN_P_M_s": {
       "description": "Massimo numero di messaggi che una persona può inviarti prima di essere bloccata. Valore di default è 3.",
       "value": "3",
-      "required": false
-    },
-    "OCR_SPACE_API_KEY": {
-      "description": "Requisito per ocr.py Vai su https://ocr.space/ocrapi e copia API.",
-      "value": "",
-      "required": false
-    },
-    "DEFAULT_BIO": {
-      "description": "Requisito per autoprofilo.py impostala per far funzionare il plugin.",
-      "value": "",
-      "required": false    
-    },
-    "REM_BG_API_KEY": {
-      "description": "Requisito per il modulo autobio, imposta la tua bio personale.",
-      "value": "",
-      "required": false
-    },
-    "GITHUB_ACCESS_TOKEN": {
-      "description": "Requisito per gitcommit.py Vai sul tuo account e copia 'Github access token' e inserisci il token per usarlo.",
-      "value": "",
-      "required": false
-    },
-    "GIT_REPO_NAME": {
-      "description": "Inserisci il nome del tuo repo solo se hai inserito GITHUB_ACCESS_TOKEN.",
-      "value": "",
-      "required": false
-    },
-    "LYDIA_API_KEY": {
-      "description": "Vai su https://telegra.ph/Lydia-09-05 e scopri come funziona.",
-      "value": "",
-      "required": false
-    },
-    "TG_BOT_TOKEN_BF_HER": {
-      "description": "Crea un bot con http://t.me/BotFather e inserisci il token personale del tuo bot.",
-      "value": "",
       "required": false
     },
     "CHROME_BIN": {
@@ -96,16 +46,6 @@
     "CHROME_DRIVER": {
       "description": "Requisito carbon.py. Non toccare. ",
       "value": "/app/.chromedriver/bin/chromedriver",
-      "required": false
-    },
-    "TG_BOT_USER_NAME_BF_HER": {
-      "description": "Crea un bot con http://t.me/BotFather e inserisci l'username in http.",
-      "value": "",
-      "required": false
-    },
-    "DOWNLOAD_PFP_URL_CLOCK": {
-      "description": "Requisito per autopic.py Url preview link della tua Pic Profilo.",
-      "value": "",
       "required": false
     },
     "TZ": {
@@ -121,7 +61,7 @@
     }
   }],
   "buildpacks": [{
-    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    "url": "https://github.com/zaidalharbi9212/heroku-buildpack-ffmpeg-latest"
   },{
     "url":"https://github.com/amivin/aria2-heroku.git"
   },{
