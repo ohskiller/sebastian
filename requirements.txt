@@ -32,13 +32,13 @@ humanize
 lxml
 oauth2client
 psycopg2
-psycopg2-binary
+psycopg2-binary>=2.9.2
 pySmartDL
 pybase64>=1.0.1
 pyfiglet
-pylast
+pylast>=4.5.0
 pymongo
-python-barcode
+python_barcode>=0.13.1
 python-dotenv
 python-magic
 pytube
